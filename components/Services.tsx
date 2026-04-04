@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Code2, TrendingUp, Video, Crown, Check } from "lucide-react";
+import { Code2, TrendingUp, Video, Crown, Check, Users } from "lucide-react";
 
 const services = [
   {
@@ -19,6 +19,24 @@ const services = [
     borderColor: "border-purple-500/20",
     iconBg: "bg-purple-500/10",
     iconColor: "text-purple-400",
+    badgeColor: "text-slate-400",
+    best: false,
+  },
+  {
+    id: "creator-portfolios",
+    icon: Users,
+    badge: "Creative",
+    title: "Creator & Portfolio Websites",
+    tagline: "Professional online homes for YouTubers and gamers",
+    features: [
+      "Custom portfolio showcases",
+      "Integrated social links & offers",
+      "Blazing fast static pages",
+      "Premium, brand-first design",
+    ],
+    borderColor: "border-indigo-500/20",
+    iconBg: "bg-indigo-500/10",
+    iconColor: "text-indigo-400",
     badgeColor: "text-slate-400",
     best: false,
   },
@@ -43,7 +61,7 @@ const services = [
   {
     id: "content",
     icon: Video,
-    badge: "Creative",
+    badge: "Creative Content",
     title: "Content Creation & Editing",
     tagline: "Videos that hook, engage, and convert",
     features: [
@@ -63,7 +81,7 @@ const services = [
     icon: Crown,
     badge: "BEST VALUE",
     title: "Full Growth System",
-    tagline: "The complete package for serious businesses",
+    tagline: "The complete package for serious results",
     features: [
       "Website + Social Media + Video Editing",
       "Complete business growth system",
@@ -132,7 +150,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {services.map((service) => {
             const Icon = service.icon;

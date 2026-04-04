@@ -79,8 +79,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed"
           >
-            I help businesses grow with high-performing websites, engaging content,
-            and complete digital systems designed to attract and convert clients.
+            I help businesses, YouTubers, gamers, editors, and freelancers grow with 
+            high-performing websites, engaging content, and digital systems designed to 
+            attract and convert.
           </motion.p>
 
           {/* CTAs */}

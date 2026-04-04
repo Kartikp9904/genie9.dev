@@ -115,20 +115,23 @@ export default function About() {
             <div className="space-y-5 text-slate-400 text-base leading-relaxed">
               <p>
                 I&apos;m the developer behind Genie9.dev, focused on building websites
-                that actually help businesses grow. My core expertise is web development,
-                where I create fast, modern, and{" "}
+                that help businesses and creators grow. My core expertise is web 
+                development, where I create fast, modern, and{" "}
                 <span className="text-white font-medium">conversion-focused websites</span>{" "}
-                using React and Next.js.
+                for products, personal brands, and digital portfolios.
               </p>
               <p>
-                Along with development, I work with a{" "}
-                <span className="text-white font-medium">team of designers, editors, and social media specialists</span>{" "}
-                to deliver complete digital solutions — including content creation and reel editing.
+                Whether you&apos;re a YouTuber, gamer, editor, coach, or freelancer, 
+                I work with a{" "}
+                <span className="text-white font-medium">team of specialists</span>{" "}
+                to deliver complete systems — from custom portfolio sites to 
+                high-performing content machines.
               </p>
               <p>
                 I don&apos;t just build websites —{" "}
                 <span className="text-white font-medium">
-                  I help you build a system that attracts clients and scales your business.
+                  I help you build a professional online home that attracts your 
+                  audience and scales your influence.
                 </span>
               </p>
             </div>
