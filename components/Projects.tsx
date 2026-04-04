@@ -6,56 +6,95 @@ import { ExternalLink, Code2, Layers } from "lucide-react";
 // ✅ ADD YOUR PROJECTS HERE DYNAMICALLY
 const projects = [
   {
-    id: "abshar-kuwait",
-    name: "Abshar Kuwait",
+    id: "article-hub",
+    name: "ArticleHub",
     description:
-      "A premium restaurant website with an integrated ordering system, WhatsApp checkout, and a mobile-first design built for maximum conversions.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "WhatsApp API"],
-    link: "#",
-    topBarColor: "from-purple-500 to-pink-500",
-    borderColor: "border-purple-500/20",
-    badgeStyle: "bg-purple-500/10 border-purple-500/20 text-purple-300",
-    btnStyle: "from-purple-500 to-pink-500",
-    badge: "E-Commerce",
+      "A premium, modern blog platform for expert-curated content across technology, lifestyle, and business.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "Shadcn UI"],
+    link: "https://articlesphere.lovable.app",
+    topBarColor: "from-blue-500 to-cyan-500",
+    borderColor: "border-blue-500/20",
+    badgeStyle: "bg-blue-500/10 border-blue-500/20 text-blue-300",
+    btnStyle: "from-blue-500 to-cyan-500",
+    badge: "Blog",
   },
   {
-    id: "euroafriasia",
-    name: "EuroAfriAsia",
+    id: "digital-universe",
+    name: "Digital Universe Portfolio",
     description:
-      "Corporate import-export business website with a modern React architecture, dynamic routing, and integrated contact form with PHPMailer.",
-    tags: ["React", "PHP", "SEO", "CSS"],
-    link: "#",
-    topBarColor: "from-violet-500 to-purple-500",
-    borderColor: "border-violet-500/20",
-    badgeStyle: "bg-violet-500/10 border-violet-500/20 text-violet-300",
-    btnStyle: "from-violet-500 to-purple-500",
-    badge: "Corporate",
+      "A futuristic and interactive personal portfolio with a cosmic theme, showcasing a developer's journey and skills.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "Shadcn UI"],
+    link: "https://digital-self-world.lovable.app",
+    topBarColor: "from-indigo-500 to-purple-500",
+    borderColor: "border-indigo-500/20",
+    badgeStyle: "bg-indigo-500/10 border-indigo-500/20 text-indigo-300",
+    btnStyle: "from-indigo-500 to-purple-500",
+    badge: "Portfolio",
   },
   {
-    id: "inter-agro",
-    name: "Inter Agro Group",
+    id: "kadhaippoma",
+    name: "Kadhaippoma",
     description:
-      "Production-ready Next.js corporate website for an agricultural trading company. Full ESLint audit, GitHub deployment and clean codebase.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "GitHub"],
-    link: "#",
-    topBarColor: "from-pink-500 to-rose-500",
-    borderColor: "border-pink-500/20",
-    badgeStyle: "bg-pink-500/10 border-pink-500/20 text-pink-300",
-    btnStyle: "from-pink-500 to-rose-500",
-    badge: "Corporate",
+      "A social music listening platform that allows friends to listen to music together in perfect real-time synchronization.",
+    tags: ["Next.js", "Socket.io", "Tailwind CSS", "Real-time"],
+    link: "https://kadhaippoma.vercel.app/",
+    topBarColor: "from-orange-500 to-red-500",
+    borderColor: "border-orange-500/20",
+    badgeStyle: "bg-orange-500/10 border-orange-500/20 text-orange-300",
+    btnStyle: "from-orange-500 to-red-500",
+    badge: "Social Media",
   },
   {
-    id: "dashboard",
-    name: "Digital Growth Dashboard",
+    id: "creator-portfolio",
+    name: "Alex Creator Portfolio",
     description:
-      "Analytics-first dashboard for tracking social media growth, lead conversions, and website performance metrics in real time.",
-    tags: ["React", "Chart.js", "Tailwind CSS", "API"],
-    link: "#",
-    topBarColor: "from-purple-600 to-violet-500",
-    borderColor: "border-purple-500/20",
-    badgeStyle: "bg-purple-500/10 border-purple-500/20 text-purple-300",
-    btnStyle: "from-purple-600 to-violet-500",
-    badge: "SaaS",
+      "A professional showcase for video editors and content creators, featuring service listings and video previews.",
+    tags: ["React", "Framer Motion", "Tailwind CSS", "Video"],
+    link: "https://creatorportfolio.lovable.app",
+    topBarColor: "from-emerald-500 to-teal-500",
+    borderColor: "border-emerald-500/20",
+    badgeStyle: "bg-emerald-500/10 border-emerald-500/20 text-emerald-300",
+    btnStyle: "from-emerald-500 to-teal-500",
+    badge: "Portfolio",
+  },
+  {
+    id: "maheshwari-metal",
+    name: "Maheshwari Metal",
+    description:
+      "A manufacturing-focused website for a sheet metal articles specialist, emphasizing quality and customer-centricity.",
+    tags: ["React", "Tailwind CSS", "Vercel", "Industrial"],
+    link: "https://maheshwarimetals.vercel.app/",
+    topBarColor: "from-slate-500 to-gray-600",
+    borderColor: "border-slate-500/20",
+    badgeStyle: "bg-slate-500/10 border-slate-500/20 text-slate-300",
+    btnStyle: "from-slate-500 to-gray-600",
+    badge: "Business",
+  },
+  {
+    id: "ucanfrench",
+    name: "UCanFrench",
+    description:
+      "An educational platform designed to help users master French through engaging short stories categorized by levels.",
+    tags: ["Next.js", "Tailwind CSS", "Vercel", "Education"],
+    link: "https://ucanfrench.com/",
+    topBarColor: "from-red-600 to-blue-600",
+    borderColor: "border-red-600/20",
+    badgeStyle: "bg-red-600/10 border-red-600/20 text-red-300",
+    btnStyle: "from-red-600 to-blue-600",
+    badge: "Educational",
+  },
+  {
+    id: "global-trade-solutions",
+    name: "Global Trade Solutions",
+    description:
+      "A premier international commerce partner specializing in agricultural commodities and supply chain logistics across 25+ countries.",
+    tags: ["Next.js", "Tailwind CSS", "B2B", "Logistics"],
+    link: "https://globaltradesolutions.vercel.app/",
+    topBarColor: "from-emerald-600 to-green-700",
+    borderColor: "border-emerald-600/20",
+    badgeStyle: "bg-emerald-600/10 border-emerald-600/20 text-emerald-300",
+    btnStyle: "from-emerald-600 to-green-700",
+    badge: "B2B Commerce",
   },
 ];
 
@@ -109,7 +148,7 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {projects.map((project) => (
             <motion.article
@@ -171,3 +210,4 @@ export default function Projects() {
     </section>
   );
 }
+
