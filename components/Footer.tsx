@@ -52,20 +52,6 @@ const socialLinks = [
     label: "Email",
     hoverColor: "hover:text-purple-400",
   },
-  {
-    id: "footer-youtube",
-    Icon: YouTubeIcon,
-    href: "#",
-    label: "YouTube",
-    hoverColor: "hover:text-red-400",
-  },
-  {
-    id: "footer-github",
-    Icon: GitHubIcon,
-    href: "#",
-    label: "GitHub",
-    hoverColor: "hover:text-purple-400",
-  },
 ];
 
 export default function Footer() {
