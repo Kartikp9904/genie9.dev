@@ -65,11 +65,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-black leading-[1.05] tracking-tight max-w-5xl mb-6"
           >
-            I Build Websites That
+            You Wish for Growth.
             <br />
-            <span className="gradient-text">Bring You Clients,</span>
+            <span className="gradient-text">We Build the Reality,</span>
             <br />
-            Not Just Visitors
+            Not Just Websites
           </motion.h1>
 
           {/* Subheadline */}
@@ -79,9 +79,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed"
           >
-            I help businesses, YouTubers, gamers, editors, and freelancers grow with 
-            high-performing websites, engaging content, and digital systems designed to 
-            attract and convert.
+            Stop wishing for more clients. I help businesses and creators scale with 
+            high-performing websites, cinematic content, and digital systems designed to 
+            grant your biggest growth goals.
           </motion.p>
 
           {/* CTAs */}

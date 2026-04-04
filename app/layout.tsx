@@ -30,6 +30,13 @@ export const metadata: Metadata = {
     description:
       "High-performing websites, content, and digital systems for businesses that want real growth.",
   },
+  icons: {
+    icon: [
+      { url: "/assets/favicon.png", sizes: "32x32", type: "image/png" },
+    ],
+    shortcut: "/assets/favicon.png",
+    apple: "/assets/favicon.png",
+  },
   robots: {
     index: true,
     follow: true,

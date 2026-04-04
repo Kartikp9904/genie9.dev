@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Code2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -43,8 +44,14 @@ export default function Navbar() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center gap-2 group"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
-                <Code2 className="w-5 h-5 text-white" />
+              <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center p-1">
+                <Image
+                  src="/assets/logo.png"
+                  alt="Genie9.dev Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
               <span className="text-xl font-bold">
                 <span className="gradient-text">Genie</span>

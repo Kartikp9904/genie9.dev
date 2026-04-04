@@ -113,13 +113,11 @@ export default function Services() {
             Services
           </span>
           <h2 className="text-3xl sm:text-5xl font-black mb-5">
-            Not Just Services —{" "}
-            <span className="gradient-text">Growth Solutions</span>
+            How We <span className="gradient-text">Grant Your Vision</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Most fail online because they focus on one thing. I build
-            complete systems that drive{" "}
-            <span className="text-white font-semibold">real results.</span>
+            Your business goals aren&apos;t just wishes. I build the complete systems 
+            that make them a <span className="text-white font-semibold">guaranteed reality.</span>
           </p>
         </motion.div>
 
@@ -174,7 +172,7 @@ export default function Services() {
                   whileTap={{ scale: 0.98 }}
                   className={`block text-center py-3 rounded-xl font-semibold text-sm transition-all duration-300 border ${service.borderColor} text-white bg-white/5 hover:bg-white/10`}
                 >
-                  Get Started →
+                  Grant My Growth →
                 </motion.a>
               </motion.div>
             );
@@ -214,7 +212,7 @@ export default function Services() {
                   whileTap={{ scale: 0.97 }}
                   className="btn-glow inline-flex items-center gap-3 px-10 py-4 rounded-2xl text-white font-bold text-lg"
                 >
-                  Start The Genesis Project →
+                  Grant My Master Vision →
                 </motion.a>
               </div>
 

@@ -88,8 +88,7 @@ export default function Contact() {
               Let&apos;s Talk
             </span>
             <h2 className="text-3xl sm:text-5xl font-black mb-4">
-              Ready to{" "}
-              <span className="gradient-text">Grow Your Business?</span>
+              Ready to <span className="gradient-text">Grant Your First Wish?</span>
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed">
               Let&apos;s build something that grows your business. Tell me about your
