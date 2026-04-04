@@ -1,104 +1,83 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Code2, TrendingUp, Video, Crown, Check, Users } from "lucide-react";
+import { Code2, TrendingUp, Video, Crown, Check, Users, Sparkles } from "lucide-react";
 
-const services = [
+const pillars = [
   {
-    id: "web-dev",
+    id: "platform",
     icon: Code2,
-    badge: "Core",
-    title: "Website Development",
-    tagline: "Fast websites that convert visitors into clients",
+    badge: "PLATFORM",
+    title: "Modern Web Solutions",
+    tagline: "High-performance sites for businesses & creators",
     features: [
-      "Custom websites (React / Next.js)",
-      "Fast loading and SEO optimized",
-      "Conversion-focused UI/UX",
-      "Mobile-first responsive design",
+      "Custom React & Next.js builds",
+      "Professional Creator Portfolios",
+      "Conversion-optimized for leads",
+      "SEO and performance first",
     ],
     borderColor: "border-purple-500/20",
     iconBg: "bg-purple-500/10",
     iconColor: "text-purple-400",
     badgeColor: "text-slate-400",
-    best: false,
   },
   {
-    id: "creator-portfolios",
-    icon: Users,
-    badge: "Creative",
-    title: "Creator & Portfolio Websites",
-    tagline: "Professional online homes for YouTubers and gamers",
+    id: "studio",
+    icon: Video,
+    badge: "STUDIO",
+    title: "Professional Video Production",
+    tagline: "Cinematic editing for Gaming, Podcasts & IRL",
     features: [
-      "Custom portfolio showcases",
-      "Integrated social links & offers",
-      "Blazing fast static pages",
-      "Premium, brand-first design",
+      "Esports & Gaming highlights",
+      "Podcast multicam & social clips",
+      "High-energy Vlog storytelling",
+      "Viral Short-form production",
     ],
     borderColor: "border-indigo-500/20",
     iconBg: "bg-indigo-500/10",
     iconColor: "text-indigo-400",
     badgeColor: "text-slate-400",
-    best: false,
   },
   {
-    id: "social-media",
+    id: "network",
     icon: TrendingUp,
-    badge: "Growth",
-    title: "Social Media Growth",
-    tagline: "Build an audience that becomes your customer base",
+    badge: "NETWORK",
+    title: "Strategic Growth Network",
+    tagline: "Build an audience that scales your brand",
     features: [
-      "Content planning & strategy",
-      "Account management",
-      "Growth-focused posting",
-      "Engagement optimization",
+      "Multi-platform content strategy",
+      "Strategic account management",
+      "Engagement & reach optimization",
+      "Audience-to-customer conversion",
     ],
     borderColor: "border-pink-500/20",
     iconBg: "bg-pink-500/10",
     iconColor: "text-pink-400",
     badgeColor: "text-slate-400",
-    best: false,
-  },
-  {
-    id: "content",
-    icon: Video,
-    badge: "Creative Content",
-    title: "Content Creation & Editing",
-    tagline: "Videos that hook, engage, and convert",
-    features: [
-      "Reel editing (Instagram / Shorts)",
-      "Hook-based short-form videos",
-      "Engaging visual storytelling",
-      "Brand-consistent content",
-    ],
-    borderColor: "border-violet-500/20",
-    iconBg: "bg-violet-500/10",
-    iconColor: "text-violet-400",
-    badgeColor: "text-slate-400",
-    best: false,
-  },
-  {
-    id: "full-system",
-    icon: Crown,
-    badge: "BEST VALUE",
-    title: "Full Growth System",
-    tagline: "The complete package for serious results",
-    features: [
-      "Website + Social Media + Video Editing",
-      "Complete business growth system",
-      "Designed to attract and convert clients",
-      "Dedicated team support",
-    ],
-    borderColor: "border-pink-400/40",
-    iconBg: "bg-pink-500/10",
-    iconColor: "text-pink-300",
-    badgeColor: "text-pink-400",
-    best: true,
   },
 ];
 
+const masterOffer = {
+  id: "genesis",
+  icon: Crown,
+  badge: "GENESIS",
+  title: "The Ultimate Master System",
+  tagline: "The complete omni-channel growth engine for major scale",
+  features: [
+    "Full Web Design + Video Studio + Growth Network",
+    "Complete brand dominance & authority building",
+    "Direct 1-on-1 strategy & team support",
+    "Tailored systems to attract high-value clients",
+  ],
+  borderColor: "border-pink-400/40",
+  iconBg: "bg-pink-500/10",
+  iconColor: "text-pink-300",
+  badgeColor: "text-pink-400",
+};
+
 const containerVariants: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.12 } },
 };
 
 const cardVariants: Variants = {
@@ -138,42 +117,29 @@ export default function Services() {
             <span className="gradient-text">Growth Solutions</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Most businesses fail online because they focus on one thing. I build
+            Most fail online because they focus on one thing. I build
             complete systems that drive{" "}
-            <span className="text-white font-semibold">real growth.</span>
+            <span className="text-white font-semibold">real results.</span>
           </p>
         </motion.div>
 
-        {/* Cards */}
+        {/* 3 Pillars Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
         >
-          {services.map((service) => {
+          {pillars.map((service) => {
             const Icon = service.icon;
             return (
               <motion.div
                 key={service.id}
                 variants={cardVariants}
                 id={`service-${service.id}`}
-                className={`relative glass-card rounded-3xl p-8 border ${service.borderColor} ${
-                  service.best
-                    ? "ring-2 ring-pink-500/30 shadow-xl"
-                    : ""
-                }`}
+                className={`relative glass-card rounded-3xl p-8 border ${service.borderColor} h-full flex flex-col`}
               >
-                {/* Best Value Badge */}
-                {service.best && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                    <div className="btn-glow px-5 py-1.5 rounded-full text-white text-xs font-bold uppercase tracking-widest whitespace-nowrap">
-                      ⭐ Best Value
-                    </div>
-                  </div>
-                )}
-
                 <div className="flex items-start gap-4 mb-6">
                   <div
                     className={`w-14 h-14 rounded-2xl ${service.iconBg} border ${service.borderColor} flex items-center justify-center shrink-0`}
@@ -181,42 +147,89 @@ export default function Services() {
                     <Icon className={`w-7 h-7 ${service.iconColor}`} />
                   </div>
                   <div className="min-w-0">
-                    <span className={`text-xs font-bold uppercase tracking-widest ${service.badgeColor}`}>
+                    <span className={`text-[10px] font-black uppercase tracking-[0.2em] ${service.badgeColor}`}>
                       {service.badge}
                     </span>
                     <h3 className="text-xl font-bold text-white mt-0.5">{service.title}</h3>
-                    <p className="text-slate-400 text-sm mt-1">{service.tagline}</p>
+                    <p className="text-slate-400 text-xs mt-1 leading-relaxed">{service.tagline}</p>
                   </div>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-1">
                   {service.features.map((feat) => (
-                    <li key={feat} className="flex items-center gap-3">
+                    <li key={feat} className="flex items-start gap-3">
                       <span
-                        className={`w-5 h-5 rounded-full ${service.iconBg} border ${service.borderColor} flex items-center justify-center shrink-0`}
+                        className={`w-5 h-5 rounded-full ${service.iconBg} border ${service.borderColor} flex items-center justify-center shrink-0 mt-0.5`}
                       >
                         <Check className={`w-3 h-3 ${service.iconColor}`} />
                       </span>
-                      <span className="text-slate-300 text-sm">{feat}</span>
+                      <span className="text-slate-300 text-sm leading-snug">{feat}</span>
                     </li>
                   ))}
                 </ul>
 
                 <motion.a
                   href="#contact"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className={`block text-center py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
-                    service.best
-                      ? "btn-glow text-white"
-                      : `border ${service.borderColor} text-white bg-white/5 hover:bg-white/10`
-                  }`}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`block text-center py-3 rounded-xl font-semibold text-sm transition-all duration-300 border ${service.borderColor} text-white bg-white/5 hover:bg-white/10`}
                 >
-                  {service.best ? "Get The Full System →" : "Get Started →"}
+                  Get Started →
                 </motion.a>
               </motion.div>
             );
           })}
+        </motion.div>
+
+        {/* Master Offer - Genesis */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="relative"
+        >
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-[2.5rem] opacity-20 blur-xl group-hover:opacity-40 transition duration-1000"></div>
+          <div className="relative glass-card rounded-[2rem] p-8 sm:p-12 border border-pink-500/30 overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+              <Sparkles className="w-32 h-32 text-pink-400" />
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-black uppercase tracking-widest mb-6">
+                  <Crown className="w-3 h-3" />
+                  {masterOffer.badge}
+                </div>
+                <h3 className="text-2xl sm:text-4xl font-black text-white mb-4">
+                  {masterOffer.title}
+                </h3>
+                <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+                  {masterOffer.tagline}
+                </p>
+                
+                <motion.a
+                  href="#contact"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="btn-glow inline-flex items-center gap-3 px-10 py-4 rounded-2xl text-white font-bold text-lg"
+                >
+                  Start The Genesis Project →
+                </motion.a>
+              </div>
+
+              <div className="space-y-4">
+                {masterOffer.features.map((feat) => (
+                  <div key={feat} className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm">
+                    <div className="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center shrink-0">
+                      <Check className="w-5 h-5 text-pink-400" />
+                    </div>
+                    <span className="text-slate-200 font-medium text-sm sm:text-base">{feat}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
