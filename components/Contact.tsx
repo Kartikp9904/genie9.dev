@@ -223,6 +223,24 @@ export default function Contact() {
               </form>
             )}
           </motion.div>
+
+          {/* Direct Email Link */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="mt-12 text-center"
+          >
+            <p className="text-slate-500 text-sm mb-2 italic">Prefer direct magic?</p>
+            <a
+              href="mailto:monkeykingkp@gmail.com"
+              className="text-white hover:text-purple-400 font-medium transition-colors duration-200 flex items-center justify-center gap-2 group"
+            >
+              <Mail className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
+              monkeykingkp@gmail.com
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

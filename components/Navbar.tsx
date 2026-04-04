@@ -44,12 +44,12 @@ export default function Navbar() {
               whileHover={{ scale: 1.02 }}
               className="flex items-center gap-2 group"
             >
-              <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center p-1">
+              <div className="relative w-12 h-12 flex items-center justify-center">
                 <Image
                   src="/assets/logo.png"
                   alt="Genie9.dev Logo"
-                  width={40}
-                  height={40}
+                  width={44}
+                  height={44}
                   className="object-contain"
                 />
               </div>

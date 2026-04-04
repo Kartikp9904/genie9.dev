@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2 } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = [
   { label: "Services", href: "#services" },
@@ -36,21 +36,33 @@ const socialLinks = [
   {
     id: "footer-instagram",
     Icon: InstagramIcon,
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/genie9.dev/",
     label: "Instagram",
     hoverColor: "hover:text-pink-400",
   },
   {
+    id: "footer-email",
+    Icon: () => (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+        <polyline points="22,6 12,13 2,6" />
+      </svg>
+    ),
+    href: "mailto:monkeykingkp@gmail.com",
+    label: "Email",
+    hoverColor: "hover:text-purple-400",
+  },
+  {
     id: "footer-youtube",
     Icon: YouTubeIcon,
-    href: "https://youtube.com",
+    href: "#",
     label: "YouTube",
     hoverColor: "hover:text-red-400",
   },
   {
     id: "footer-github",
     Icon: GitHubIcon,
-    href: "https://github.com",
+    href: "#",
     label: "GitHub",
     hoverColor: "hover:text-purple-400",
   },
@@ -68,8 +80,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-purple-500/30">
-                <Code2 className="w-5 h-5 text-white" />
+              <div className="relative w-10 h-10 flex items-center justify-center">
+                <Image
+                  src="/assets/logo.png"
+                  alt="Genie9.dev Logo"
+                  width={36}
+                  height={36}
+                  className="object-contain"
+                />
               </div>
               <span className="text-xl font-bold">
                 <span className="gradient-text">Genie</span>
