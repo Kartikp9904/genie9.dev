@@ -60,7 +60,7 @@ export default function About() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="text-2xl font-black text-white">Genie9.dev</h3>
-                  <p className="text-purple-400 font-medium text-sm">Web Developer & Growth Partner</p>
+                  <p className="text-purple-400 font-medium text-sm">Agency & Growth Partner</p>
                 </div>
               </div>
 
@@ -105,32 +105,32 @@ export default function About() {
             transition={{ duration: 0.7 }}
           >
             <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest mb-3 block">
-              About Me
+              About Us
             </span>
             <h2 className="text-3xl sm:text-5xl font-black mb-6 leading-tight">
-              The Mind Behind{" "}
+              The Team Behind{" "}
               <span className="gradient-text">Genie9.dev</span>
             </h2>
 
             <div className="space-y-5 text-slate-400 text-base leading-relaxed">
               <p>
-                I&apos;m the developer behind Genie9.dev, focused on building websites
-                that help businesses and creators grow. My core expertise is web 
-                development, where I create fast, modern, and{" "}
+                We are the team behind Genie9.dev, focused on building websites
+                that help businesses and creators grow. Our core expertise is web 
+                development, where we create fast, modern, and{" "}
                 <span className="text-white font-medium">conversion-focused websites</span>{" "}
                 for products, personal brands, and digital portfolios.
               </p>
               <p>
                 Whether you&apos;re a YouTuber, gamer, editor, coach, or freelancer, 
-                I work with a{" "}
+                we work as a{" "}
                 <span className="text-white font-medium">team of specialists</span>{" "}
                 to deliver complete systems — from custom portfolio sites to 
                 high-performing content machines.
               </p>
               <p>
-                I don&apos;t just build websites —{" "}
+                We don&apos;t just build websites —{" "}
                 <span className="text-white font-medium">
-                  I help you build a professional online home that attracts your 
+                  we help you build a professional online home that attracts your 
                   audience and scales your influence.
                 </span>
               </p>

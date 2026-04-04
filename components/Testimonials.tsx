@@ -91,7 +91,7 @@ export default function Testimonials() {
             <span className="gradient-text">Real People</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            Don&apos;t take my word for it — read what real clients say about working with Genie9.dev.
+            Don&apos;t take our word for it — read what real clients say about working with Genie9.dev.
           </p>
         </motion.div>
 

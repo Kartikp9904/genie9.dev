@@ -116,7 +116,7 @@ export default function Services() {
             How We <span className="gradient-text">Grant Your Vision</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Your business goals aren&apos;t just wishes. I build the complete systems 
+            Your business goals aren&apos;t just wishes. We build complete systems 
             that make them a <span className="text-white font-semibold">guaranteed reality.</span>
           </p>
         </motion.div>

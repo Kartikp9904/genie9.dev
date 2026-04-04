@@ -91,8 +91,8 @@ export default function Contact() {
               Ready to <span className="gradient-text">Grant Your First Wish?</span>
             </h2>
             <p className="text-slate-400 text-lg leading-relaxed">
-              Let&apos;s build something that grows your business. Tell me about your
-              project and I&apos;ll get back to you within 24 hours.
+              Let&apos;s build something that grows your business. Tell us about your
+              project and we&apos;ll get back to you within 24 hours.
             </p>
           </motion.div>
 
@@ -112,7 +112,7 @@ export default function Contact() {
                 <CheckCircle2 className="w-16 h-16 text-purple-400" />
                 <h3 className="text-2xl font-black text-white">Message Sent! 🚀</h3>
                 <p className="text-slate-400 max-w-sm">
-                  Thanks for reaching out. I&apos;ll review your project and get back to you
+                  Thanks for reaching out. We&apos;ll review your project and get back to you
                   within 24 hours.
                 </p>
                 <button
@@ -170,7 +170,7 @@ export default function Contact() {
                 {/* Message */}
                 <div>
                   <label htmlFor="contact-message" className="block text-sm font-medium text-slate-400 mb-2">
-                    Tell Me About Your Project
+                    Tell Us About Your Project
                   </label>
                   <div className="relative">
                     <MessageSquare className="absolute left-4 top-4 w-4 h-4 text-slate-500 pointer-events-none" />
@@ -181,7 +181,7 @@ export default function Contact() {
                       rows={5}
                       value={formState.message}
                       onChange={handleChange}
-                      placeholder="I need a website for my business that helps me get more clients..."
+                      placeholder="We need a website for our business that helps us get more clients..."
                       className="w-full pl-11 pr-4 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder:text-slate-600 focus:outline-none focus:border-purple-500/50 transition-all duration-200 text-sm resize-none"
                     />
                   </div>

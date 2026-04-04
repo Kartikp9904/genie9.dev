@@ -56,7 +56,7 @@ export default function TrustSection() {
             <span className="gradient-text">Genie9.dev</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            I don&apos;t just build pretty websites. I build digital assets that
+            We don&apos;t just build pretty websites. We build digital assets that
             work hard for your business — 24/7.
           </p>
         </motion.div>

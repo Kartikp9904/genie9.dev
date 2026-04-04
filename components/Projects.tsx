@@ -132,7 +132,7 @@ export default function Projects() {
           className="text-center mb-14"
         >
           <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest mb-3 block">
-            My Work
+            Our Work
           </span>
           <h2 className="text-3xl sm:text-5xl font-black mb-5">
             Projects That{" "}

@@ -79,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed"
           >
-            Stop wishing for more clients. I help businesses and creators scale with 
+            Stop wishing for more clients. We help businesses and creators scale with 
             high-performing websites, cinematic content, and digital systems designed to 
             grant your biggest growth goals.
           </motion.p>
@@ -97,7 +97,7 @@ export default function Hero() {
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl border border-purple-500/30 bg-purple-500/10 text-white font-semibold text-base hover:border-purple-500/60 hover:bg-purple-500/20 transition-all duration-300"
             >
-              View My Work
+              View Our Work
               <ArrowRight className="w-4 h-4" />
             </motion.a>
             <motion.a

@@ -66,13 +66,14 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="relative w-12 h-12 flex items-center justify-center">
                 <Image
                   src="/assets/logo.png"
                   alt="Genie9.dev Logo"
-                  width={36}
-                  height={36}
+                  width={46}
+                  height={46}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
               <span className="text-xl font-bold">
@@ -142,9 +143,7 @@ export default function Footer() {
           <p className="text-slate-500 text-sm">
             © {currentYear} Genie9.dev. All rights reserved.
           </p>
-          <p className="text-slate-600 text-xs">
-            Built with Next.js & Tailwind CSS — Designed to convert
-          </p>
+
         </div>
       </div>
     </footer>

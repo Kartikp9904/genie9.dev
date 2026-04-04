@@ -9,7 +9,7 @@ const steps = [
     icon: Search,
     title: "Understand Your Business & Goals",
     description:
-      "I dive deep into your business, target audience, and growth objectives. Understanding your why is the foundation of everything.",
+      "We dive deep into your business, target audience, and growth objectives. Understanding your why is the foundation of everything.",
   },
   {
     number: "02",
@@ -69,8 +69,7 @@ export default function Process() {
             The Process
           </span>
           <h2 className="text-3xl sm:text-5xl font-black mb-5">
-            How I Help{" "}
-            <span className="gradient-text">Businesses Grow</span>
+            How We <span className="gradient-text">Help Businesses Grow</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto text-center">
             A proven, step-by-step system that takes you from where you are to where you want to be.
@@ -120,10 +119,10 @@ export default function Process() {
           className="mt-16 text-center glass-card rounded-3xl p-10 border border-purple-500/20"
         >
           <p className="text-2xl sm:text-3xl font-black text-white mb-2">
-            I don&apos;t just build websites —
+            We don&apos;t just build websites —
           </p>
           <p className="text-2xl sm:text-3xl font-black gradient-text mb-8">
-            I build systems that help you make money.
+            We build systems that help you make money.
           </p>
           <motion.a
             href="#contact"
