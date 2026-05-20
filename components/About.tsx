@@ -50,7 +50,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-white">Kartik Patel</h3>
                     <p className="text-blue-400 text-sm font-medium">Founder & Lead Developer</p>
                     <a
-                      href="https://linkedin.com/in/genie9dev"
+                      href="https://www.linkedin.com/in/genie9dev"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-white mt-1 transition-colors"
@@ -143,7 +143,7 @@ export default function About() {
                 Start a Project →
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/genie9dev"
+                href="https://www.linkedin.com/in/genie9dev"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.03 }}
