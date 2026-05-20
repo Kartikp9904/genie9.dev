@@ -1,135 +1,137 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Code2, TrendingUp, Video, Crown, Check, Users, Sparkles } from "lucide-react";
+import { Code2, GitMerge, Bot, Paintbrush, Check } from "lucide-react";
 
-const pillars = [
+const serviceCategories = [
   {
-    id: "platform",
+    id: "web-dev",
     icon: Code2,
-    badge: "PLATFORM",
-    title: "Modern Web Solutions",
-    tagline: "High-performance sites for businesses & creators",
+    badge: "DEVELOPMENT",
+    title: "Website Development",
+    tagline: "High-speed websites built to turn visitors into paying clients.",
     features: [
-      "Custom React & Next.js builds",
-      "Professional Creator Portfolios",
-      "Conversion-optimized for leads",
-      "SEO and performance first",
+      "Custom Business Websites",
+      "High-Converting Landing Pages",
+      "Interactive Portfolio Sites",
+      "Shopify & Custom E-commerce",
     ],
-    borderColor: "border-purple-500/20",
-    iconBg: "bg-purple-500/10",
-    iconColor: "text-purple-400",
-    badgeColor: "text-slate-400",
+    outcome: "Boosts load speeds by 60%+",
+    borderColor: "border-blue-500/20",
+    iconBg: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+    badgeColor: "text-blue-300",
   },
   {
-    id: "studio",
-    icon: Video,
-    badge: "STUDIO",
-    title: "Professional Video Production",
-    tagline: "Cinematic editing for Gaming, Podcasts & IRL",
+    id: "automation",
+    icon: GitMerge,
+    badge: "WORKFLOWS",
+    title: "Automation Solutions",
+    tagline: "Eliminate repetitive tasks and save hours of manual admin work.",
     features: [
-      "Esports & Gaming highlights",
-      "Podcast multicam & social clips",
-      "High-energy Vlog storytelling",
-      "Viral Short-form production",
+      "WhatsApp Business API Setup",
+      "CRM & Pipeline Workflows",
+      "Automated Email Sequences",
+      "Cross-Platform Data Syncing",
     ],
+    outcome: "Saves 10+ manual hours/week",
     borderColor: "border-indigo-500/20",
     iconBg: "bg-indigo-500/10",
     iconColor: "text-indigo-400",
-    badgeColor: "text-slate-400",
+    badgeColor: "text-indigo-300",
   },
   {
-    id: "network",
-    icon: TrendingUp,
-    badge: "NETWORK",
-    title: "Strategic Growth Network",
-    tagline: "Build an audience that scales your brand",
+    id: "ai-integrations",
+    icon: Bot,
+    badge: "AI & SYSTEMS",
+    title: "AI Integrations",
+    tagline: "Leverage intelligent models to handle support and data tasks.",
     features: [
-      "Multi-platform content strategy",
-      "Strategic account management",
-      "Engagement & reach optimization",
-      "Audience-to-customer conversion",
+      "Smart Support Chatbots",
+      "Automated Lead Pre-qualification",
+      "Custom AI Workflow Assistants",
+      "AI-Generated Content Systems",
     ],
-    borderColor: "border-pink-500/20",
-    iconBg: "bg-pink-500/10",
-    iconColor: "text-pink-400",
-    badgeColor: "text-slate-400",
+    outcome: "24/7 automated support",
+    borderColor: "border-cyan-500/20",
+    iconBg: "bg-cyan-500/10",
+    iconColor: "text-cyan-400",
+    badgeColor: "text-cyan-300",
+  },
+  {
+    id: "uiux-design",
+    icon: Paintbrush,
+    badge: "AESTHETICS",
+    title: "UI/UX & Mobile Design",
+    tagline: "Premium, responsive interfaces that reflect your premium brand.",
+    features: [
+      "Full Website Redesigns",
+      "Modern Web & App Interfaces",
+      "100% Mobile Optimization",
+      "Conversion Rate Optimization (CRO)",
+    ],
+    outcome: "Increases conversions by 2x",
+    borderColor: "border-blue-500/20",
+    iconBg: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+    badgeColor: "text-blue-300",
   },
 ];
 
-const masterOffer = {
-  id: "genesis",
-  icon: Crown,
-  badge: "GENESIS",
-  title: "The Ultimate Master System",
-  tagline: "The complete omni-channel growth engine for major scale",
-  features: [
-    "Full Web Design + Video Studio + Growth Network",
-    "Complete brand dominance & authority building",
-    "Direct 1-on-1 strategy & team support",
-    "Tailored systems to attract high-value clients",
-  ],
-  borderColor: "border-pink-400/40",
-  iconBg: "bg-pink-500/10",
-  iconColor: "text-pink-300",
-  badgeColor: "text-pink-400",
-};
-
 const containerVariants: Variants = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.12 } },
+  visible: { transition: { staggerChildren: 0.1 } },
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
 export default function Services() {
   return (
-    <section id="services" className="section-pad relative overflow-hidden">
+    <section id="services" className="section-pad relative overflow-hidden bg-[#090d16]">
       <div
         className="orb"
         style={{
           width: "500px",
           height: "500px",
-          background: "#7c3aed",
+          background: "#1e3a8a",
           top: "80px",
           right: "-15%",
-          opacity: "0.1",
+          opacity: 0.03,
         }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <span className="text-sm font-semibold text-purple-400 uppercase tracking-widest mb-3 block">
-            Services
+          <span className="text-sm font-semibold text-blue-400 uppercase tracking-widest mb-3 block">
+            Our Services
           </span>
           <h2 className="text-3xl sm:text-5xl font-black mb-5">
-            How We <span className="gradient-text">Grant Your Vision</span>
+            Solutions That <span className="gradient-text">Make Business Sense</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Your business goals aren&apos;t just wishes. We build complete systems 
-            that make them a <span className="text-white font-semibold">guaranteed reality.</span>
+            We don&apos;t build fancy, complex widgets that serve no purpose. We develop the core systems that help you acquire clients, save time, and operate smoothly.
           </p>
         </motion.div>
 
-        {/* 3 Pillars Grid */}
+        {/* Services Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
         >
-          {pillars.map((service) => {
+          {serviceCategories.map((service) => {
             const Icon = service.icon;
             return (
               <motion.div
@@ -149,7 +151,7 @@ export default function Services() {
                       {service.badge}
                     </span>
                     <h3 className="text-xl font-bold text-white mt-0.5">{service.title}</h3>
-                    <p className="text-slate-400 text-xs mt-1 leading-relaxed">{service.tagline}</p>
+                    <p className="text-slate-400 text-sm mt-1 leading-relaxed">{service.tagline}</p>
                   </div>
                 </div>
 
@@ -166,68 +168,22 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <motion.a
-                  href="#contact"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className={`block text-center py-3 rounded-xl font-semibold text-sm transition-all duration-300 border ${service.borderColor} text-white bg-white/5 hover:bg-white/10`}
-                >
-                  Grant My Growth →
-                </motion.a>
+                <div className="pt-4 border-t border-white/5 flex items-center justify-between gap-4 flex-wrap">
+                  <span className="text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1.5 rounded-full">
+                    {service.outcome}
+                  </span>
+                  <motion.a
+                    href="#contact"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className={`text-center px-5 py-2.5 rounded-xl font-semibold text-xs transition-all duration-300 border ${service.borderColor} text-white bg-white/5 hover:bg-white/10`}
+                  >
+                    Inquire About This →
+                  </motion.a>
+                </div>
               </motion.div>
             );
           })}
-        </motion.div>
-
-        {/* Master Offer - Genesis */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="relative"
-        >
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-[2.5rem] opacity-20 blur-xl group-hover:opacity-40 transition duration-1000"></div>
-          <div className="relative glass-card rounded-[2rem] p-8 sm:p-12 border border-pink-500/30 overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-              <Sparkles className="w-32 h-32 text-pink-400" />
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-black uppercase tracking-widest mb-6">
-                  <Crown className="w-3 h-3" />
-                  {masterOffer.badge}
-                </div>
-                <h3 className="text-2xl sm:text-4xl font-black text-white mb-4">
-                  {masterOffer.title}
-                </h3>
-                <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                  {masterOffer.tagline}
-                </p>
-                
-                <motion.a
-                  href="#contact"
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="btn-glow inline-flex items-center gap-3 px-10 py-4 rounded-2xl text-white font-bold text-lg"
-                >
-                  Grant My Master Vision →
-                </motion.a>
-              </div>
-
-              <div className="space-y-4">
-                {masterOffer.features.map((feat) => (
-                  <div key={feat} className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 backdrop-blur-sm">
-                    <div className="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center shrink-0">
-                      <Check className="w-5 h-5 text-pink-400" />
-                    </div>
-                    <span className="text-slate-200 font-medium text-sm sm:text-base">{feat}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

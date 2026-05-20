@@ -9,8 +9,8 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "Work", href: "#projects" },
-  { label: "About", href: "#about" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -32,7 +32,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[#080810]/90 backdrop-blur-xl border-b border-purple-500/10 shadow-lg shadow-black/20"
+            ? "bg-[#090d16]/90 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/25"
             : "bg-transparent"
         }`}
       >
@@ -70,7 +70,7 @@ export default function Navbar() {
                   className="text-sm text-slate-400 hover:text-white transition-colors duration-200 relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-blue-500 to-indigo-500 group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
               <motion.a
@@ -107,7 +107,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 lg:hidden pt-16"
           >
             <div
-              className="absolute inset-0 bg-[#080810]/95 backdrop-blur-xl"
+              className="absolute inset-0 bg-[#090d16]/95 backdrop-blur-xl"
               onClick={() => setMenuOpen(false)}
             />
             <div className="relative flex flex-col items-center justify-center h-full gap-8">
@@ -119,7 +119,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.07 }}
                   onClick={() => setMenuOpen(false)}
-                  className="text-2xl font-semibold text-white hover:text-purple-400 transition-colors"
+                  className="text-2xl font-semibold text-white hover:text-blue-400 transition-colors"
                 >
                   {link.label}
                 </motion.a>
